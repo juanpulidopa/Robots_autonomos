@@ -1,0 +1,44 @@
+running egg_info
+creating ../../build/modelo_jet/modelo_jet.egg-info
+writing ../../build/modelo_jet/modelo_jet.egg-info/PKG-INFO
+writing dependency_links to ../../build/modelo_jet/modelo_jet.egg-info/dependency_links.txt
+writing entry points to ../../build/modelo_jet/modelo_jet.egg-info/entry_points.txt
+writing requirements to ../../build/modelo_jet/modelo_jet.egg-info/requires.txt
+writing top-level names to ../../build/modelo_jet/modelo_jet.egg-info/top_level.txt
+writing manifest file '../../build/modelo_jet/modelo_jet.egg-info/SOURCES.txt'
+reading manifest file '../../build/modelo_jet/modelo_jet.egg-info/SOURCES.txt'
+writing manifest file '../../build/modelo_jet/modelo_jet.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/juan/Ros_Jetbot/build/modelo_jet/build
+creating /home/juan/Ros_Jetbot/build/modelo_jet/build/lib
+creating /home/juan/Ros_Jetbot/build/modelo_jet/build/lib/modelo_jet
+copying modelo_jet/__init__.py -> /home/juan/Ros_Jetbot/build/modelo_jet/build/lib/modelo_jet
+running install
+running install_lib
+creating /home/juan/Ros_Jetbot/install/modelo_jet/lib/python3.11/site-packages/modelo_jet
+copying /home/juan/Ros_Jetbot/build/modelo_jet/build/lib/modelo_jet/__init__.py -> /home/juan/Ros_Jetbot/install/modelo_jet/lib/python3.11/site-packages/modelo_jet
+byte-compiling /home/juan/Ros_Jetbot/install/modelo_jet/lib/python3.11/site-packages/modelo_jet/__init__.py to __init__.cpython-311.pyc
+running install_data
+creating /home/juan/Ros_Jetbot/install/modelo_jet/share/ament_index
+creating /home/juan/Ros_Jetbot/install/modelo_jet/share/ament_index/resource_index
+creating /home/juan/Ros_Jetbot/install/modelo_jet/share/ament_index/resource_index/packages
+copying resource/modelo_jet -> /home/juan/Ros_Jetbot/install/modelo_jet/share/ament_index/resource_index/packages
+copying package.xml -> /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet
+creating /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/urdf
+copying urdf/JetBot.urdf -> /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/urdf
+creating /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/launch
+copying launch/display.launch.py -> /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/launch
+creating /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/meshes
+copying meshes/Prismatico.STL -> /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/meshes
+copying meshes/servo.STL -> /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/meshes
+copying meshes/Camara.STL -> /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/meshes
+copying meshes/Rueda_izquierda_atras.STL -> /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/meshes
+copying meshes/Rueda_derecha_atras.STL -> /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/meshes
+copying meshes/Rueda_derecha.STL -> /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/meshes
+copying meshes/base_link.STL -> /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/meshes
+copying meshes/Rueda_izquierda.STL -> /home/juan/Ros_Jetbot/install/modelo_jet/share/modelo_jet/meshes
+running install_egg_info
+Copying ../../build/modelo_jet/modelo_jet.egg-info to /home/juan/Ros_Jetbot/install/modelo_jet/lib/python3.11/site-packages/modelo_jet-0.0.0-py3.11.egg-info
+running install_scripts
+writing list of installed files to '/home/juan/Ros_Jetbot/build/modelo_jet/install.log'

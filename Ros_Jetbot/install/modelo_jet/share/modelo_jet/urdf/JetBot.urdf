@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="modelo_jet">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0110234162103793 1.37854874715515E-06 0.000157426158267814"
+        rpy="0 0 0" />
+      <mass
+        value="0.0702754782870741" />
+      <inertia
+        ixx="4.50418950998749E-05"
+        ixy="-6.31399155094745E-09"
+        ixz="-8.45085330221314E-07"
+        iyy="0.000134449112913256"
+        iyz="4.69222039701717E-10"
+        izz="0.00016155174417827" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Rueda_derecha">
+    <inertial>
+      <origin
+        xyz="-1.95258696017442E-08 2.56903398511074E-08 0.00737717020240815"
+        rpy="0 0 0" />
+      <mass
+        value="0.02139064998809" />
+      <inertia
+        ixx="8.62734894260715E-06"
+        ixy="7.18929322493008E-10"
+        ixz="3.78829652898775E-12"
+        iyy="8.62731393090429E-06"
+        iyz="-3.90647055226811E-12"
+        izz="1.45154775052145E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/Rueda_derecha.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/Rueda_derecha.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rueda_derecha"
+    type="continuous">
+    <origin
+      xyz="0.040035161138547 -0.0625 -0.016"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rueda_derecha" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="Rueda_izquierda">
+    <inertial>
+      <origin
+        xyz="2.56566635159494E-08 -2.01408319779051E-08 -0.00737717021985709"
+        rpy="0 0 0" />
+      <mass
+        value="0.0213906499859894" />
+      <inertia
+        ixx="8.62726554101095E-06"
+        ixy="7.16117410072595E-10"
+        ixz="4.01770221386501E-12"
+        iyy="8.62739733199183E-06"
+        iyz="-3.6860560559307E-12"
+        izz="1.45154775050558E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/Rueda_izquierda.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/Rueda_izquierda.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rueda_izquierda"
+    type="continuous">
+    <origin
+      xyz="0.040035161138547 0.0625 -0.016"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rueda_izquierda" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Prismatico">
+    <inertial>
+      <origin
+        xyz="-0.0168038209268663 2.77555756156289E-17 0.0131387215749457"
+        rpy="0 0 0" />
+      <mass
+        value="0.0254773843153175" />
+      <inertia
+        ixx="2.55633285669202E-05"
+        ixy="-1.0246121973574E-21"
+        ixz="3.9846481165429E-06"
+        iyy="2.54658110389858E-05"
+        iyz="-1.42360671909395E-21"
+        izz="1.26962901107759E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/Prismatico.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/Prismatico.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Prismatico"
+    type="prismatic">
+    <origin
+      xyz="0.09136 0 0.029365"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Prismatico" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.03"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="servo">
+    <inertial>
+      <origin
+        xyz="0.00511539696077652 -3.62465412262203E-05 0.00632454648829188"
+        rpy="0 0 0" />
+      <mass
+        value="0.0115226658888555" />
+      <inertia
+        ixx="3.88377103014534E-06"
+        ixy="-7.21136110127849E-09"
+        ixz="-2.19113270881711E-07"
+        iyy="2.86609813545094E-06"
+        iyz="1.55258687978977E-09"
+        izz="5.29286829787266E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/servo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/servo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="servo"
+    type="revolute">
+    <origin
+      xyz="-0.0288514504417796 0 0.0556082397189115"
+      rpy="0 0 0" />
+    <parent
+      link="Prismatico" />
+    <child
+      link="servo" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Camara">
+    <inertial>
+      <origin
+        xyz="0.0182765158356149 0.0213196252645349 -0.03"
+        rpy="0 0 0" />
+      <mass
+        value="0.00665998975622175" />
+      <inertia
+        ixx="3.21155576353648E-06"
+        ixy="9.70682582623084E-08"
+        ixz="3.01920923581855E-22"
+        iyy="3.16153744386753E-06"
+        iyz="-6.84284983833664E-22"
+        izz="8.37975898119302E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/Camara.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/Camara.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Camara"
+    type="revolute">
+    <origin
+      xyz="0.012345 -0.025088 0.01"
+      rpy="1.5708 0 -0.0070857" />
+    <parent
+      link="servo" />
+    <child
+      link="Camara" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1"
+      upper="-0.3"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Rueda_derecha_atras">
+    <inertial>
+      <origin
+        xyz="-3.11471735348068E-08 -1.22462899855569E-08 -0.00737717022300254"
+        rpy="0 0 0" />
+      <mass
+        value="0.0213906499874812" />
+      <inertia
+        ixx="8.62668862481966E-06"
+        ixy="-3.22427291772326E-10"
+        ixz="-5.31034446608249E-12"
+        iyy="8.62797424872917E-06"
+        iyz="-1.29133346310508E-12"
+        izz="1.45154775052323E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/Rueda_derecha_atras.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/Rueda_derecha_atras.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rueda_derecha_atras"
+    type="continuous">
+    <origin
+      xyz="-0.049965 -0.0625 -0.016"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rueda_derecha_atras" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Rueda_izquierda_atras">
+    <inertial>
+      <origin
+        xyz="1.18981572719279E-08 -3.18506142389305E-08 0.00737717025007104"
+        rpy="0 0 0" />
+      <mass
+        value="0.0213906499842434" />
+      <inertia
+        ixx="8.62780427072924E-06"
+        ixy="5.41842950705599E-10"
+        ixz="-2.28421077126928E-12"
+        iyy="8.62685860195069E-06"
+        iyz="4.98324372310738E-12"
+        izz="1.45154775049025E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/Rueda_izquierda_atras.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_jet/meshes/Rueda_izquierda_atras.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rueda_izquierda_atras"
+    type="continuous">
+    <origin
+      xyz="-0.049964838861453 0.0625000000000001 -0.016"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rueda_izquierda_atras" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>
